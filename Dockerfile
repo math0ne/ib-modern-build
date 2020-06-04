@@ -38,6 +38,6 @@ COPY Gemfile /myapp/Gemfile
 
 RUN bundle install
 
-COPY entrypoint.sh /usr/bin/
-RUN chmod +x /usr/bin/entrypoint.sh
-ENTRYPOINT ["entrypoint.sh"]
+COPY "entrypoint.sh" "/entrypoint.sh"
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]

@@ -4,10 +4,6 @@ inputs:
   command-to-run:  # id of input
     description: 'Command to run'
     required: true
-    default: 'node -v'
-outputs:
-  command: # id of output
-    description: 'Success'
 runs:
   using: 'docker'
   image: 'Dockerfile'
