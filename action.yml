@@ -6,7 +6,7 @@ inputs:
     required: true
     default: 'node -v'
 outputs:
-  time: # id of output
+  command: # id of output
     description: 'Success'
 runs:
   using: 'docker'
