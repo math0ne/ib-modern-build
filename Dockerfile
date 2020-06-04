@@ -10,7 +10,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     bash \
     ruby \
     ruby-dev \
-    build-essential
+    build-essential \
+    git \
+    libpng-dev
 
 # Install Basics
 RUN apt-get update \
