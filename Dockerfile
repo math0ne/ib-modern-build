@@ -32,9 +32,7 @@ RUN npm -v
 RUN yarn -v
 RUN ruby -v
 
-RUN mkdir /myapp
-WORKDIR /myapp
-COPY Gemfile /myapp/Gemfile
+COPY Gemfile ./
 
 RUN bundle install
 
