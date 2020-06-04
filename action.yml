@@ -1,0 +1,15 @@
+name: 'Jekyll Webpack Build System'
+description: 'Run a command on the build system'
+inputs:
+  command-to-run:  # id of input
+    description: 'Command to run'
+    required: true
+    default: 'node -v'
+outputs:
+  time: # id of output
+    description: 'Success'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.command-to-run }}
